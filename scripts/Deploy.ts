@@ -5,7 +5,7 @@ async function main() {
 
     console.log("Deploying contracts with the account:", deployer.address);
 
-    // Define the constructor arguments
+    // The constructor arguments
     const nftAddress = "0x47DcEEc5e6C026aDce15fbd575F2AD720C32Bf09"; 
     const requiredNftId = 1; 
 
@@ -18,7 +18,6 @@ async function main() {
     // Wait for the contract to be deployed
     await eventManagement.deploymentTransaction();
 
-    // Use getAddress() method if necessary
     const contractAddress = await eventManagement.getAddress();
 
     console.log('✅ Contract deployed to:', contractAddress);
